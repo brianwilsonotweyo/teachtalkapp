@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "532613104746",
+    "project_id": "teachtalk-a2730",
+    "storage_bucket": "teachtalk-a2730.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532613104746:android:55bc5f3f583b68af69f613",
+        "android_client_info": {
+          "package_name": "com.example.teachtalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532613104746-g481jkbgaqe7mt1m5s1cglnlql3urk37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.teachtalk",
+            "certificate_hash": "f2d5543465fd5615161d4d43899531ac6d8c9c4e"
+          }
+        },
+        {
+          "client_id": "532613104746-u2ri23rfid0svq9t26fpc5f15rmr9ms4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA02zcDEBq7vCu5e0-aQfw5AXt6vrAdsDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532613104746-u2ri23rfid0svq9t26fpc5f15rmr9ms4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
