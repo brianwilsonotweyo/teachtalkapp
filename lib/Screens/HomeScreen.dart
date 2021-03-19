@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:teachtalk/Screens/HomeScreens/Account.dart';
 import 'package:teachtalk/Screens/HomeScreens/Featured.dart';
 import 'package:teachtalk/Screens/HomeScreens/MyCourses.dart';
-import 'package:teachtalk/Screens/HomeScreens/Search.dart';
 import 'package:teachtalk/Screens/HomeScreens/Wishlist.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -28,7 +27,11 @@ class _HomeScreenState extends State<HomeScreen> {
           currentIndex = index;
         },
         controller: pageController,
-        children: [Featured(), Search(), MyCourses(), Wishlist(), Account()],
+        children: [
+          Featured(), Wishlist(),
+          //  MyCourses(),
+          Account()
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTap,
@@ -50,12 +53,11 @@ class _HomeScreenState extends State<HomeScreen> {
         currentIndex: currentIndex,
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Courses'),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+          BottomNavigationBarItem(icon: Icon(Icons.star), label: 'BootCamp'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.music_video), label: 'MyCourses'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.headset_outlined), label: 'Wishlist'),
+              icon: Icon(Icons.video_collection_outlined), label: 'Courses'),
+          // BottomNavigationBarItem(
+          //     icon: Icon(Icons.file_download), label: 'Downloads'),
           BottomNavigationBarItem(
               icon: Icon(Icons.account_box), label: 'Account'),
         ],

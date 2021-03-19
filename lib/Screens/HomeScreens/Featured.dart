@@ -1,6 +1,5 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:teachtalk/Screens/HomeScreens/DetailedSection/DetailedScreen.dart';
 import 'package:teachtalk/Screens/MyLists.dart';
@@ -44,10 +43,10 @@ class _FeaturedState extends State<Featured> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text('Courses now on sale',
+                      Text('BootCamps & Courses',
                           style:
                               TextStyle(color: Colors.white, fontSize: 20.0)),
-                      Text('@25,000 UGX per course',
+                      Text('Completely free of charge',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 22.0,
@@ -405,9 +404,10 @@ class _FeaturedState extends State<Featured> {
         ),
       ),
       appBar: AppBar(
+        centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(EvaIcons.shoppingCartOutline),
+            icon: Icon(EvaIcons.archive),
             onPressed: () {
               Get.to(MyList());
             },

@@ -22,7 +22,7 @@ class _SignInState extends State<SignIn> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 200.0),
+                  padding: const EdgeInsets.only(bottom: 150.0),
                   child: Text(
                     "Sign In",
                     style: TextStyle(
@@ -77,25 +77,6 @@ class _SignInState extends State<SignIn> {
                       icon: Icon(EvaIcons.facebook),
                       label: Text('Sign In With Facebook')),
                 ),
-                Padding(
-                    padding: const EdgeInsets.only(left: 65),
-                    child: Row(
-                      children: [
-                        Text('New Here ?',
-                            style: TextStyle(color: Colors.white)),
-                        MaterialButton(
-                          onPressed: () {
-                            Navigator.pushReplacement(
-                                context,
-                                PageTransition(
-                                    child: SignUp(),
-                                    type: PageTransitionType.bottomToTop));
-                          },
-                          child: Text('Create a new Account',
-                              style: TextStyle(color: Colors.white)),
-                        )
-                      ],
-                    )),
               ],
             )),
             decoration: BoxDecoration(

@@ -1,6 +1,5 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:teachtalk/Screens/MyLists.dart';
@@ -17,17 +16,14 @@ class _WishlistState extends State<Wishlist> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: Colors.black,
-        title: Text('Wishlist', style: TextStyle(color: Colors.white)),
+        title: Text('AvailableCourses', style: TextStyle(color: Colors.white)),
         actions: [
           IconButton(
-            icon: Icon(EvaIcons.shoppingCartOutline, color: Colors.white),
+            icon: Icon(EvaIcons.archive, color: Colors.white),
             onPressed: () {
-              Navigator.pushReplacement(
-                  context,
-                  PageTransition(
-                      child: MyList(),
-                      type: PageTransitionType.leftToRightWithFade));
+              Get.to(MyList());
             },
           )
         ],
@@ -36,7 +32,7 @@ class _WishlistState extends State<Wishlist> {
         init: DataController(),
         builder: (value) {
           return new FutureBuilder(
-              future: value.getData('wishlist'),
+              future: value.getData('courses'),
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
                   return Center(
